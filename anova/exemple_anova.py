@@ -17,7 +17,8 @@ colors = ["#8dd3c7","#ffffb3","#bebada","#fb8072","#80b1d3","#fdb462","#b3de69"]
 columns=['Residual','ind_ssp','ind_EEI','ind_technoelec','ind_technoCCS','ind_technoenduses','ind_ffuels']
 legends=['interactions of drivers','growth','IEE','techno_electricity','techno_CCS','techno_end uses','fossil_fuels']
 
-IEeur=read_csv('IEeur.tsv')
+path = 'MP_S1/Modé_prospective/TP_MP_EEET/TP_IMACLIM-R/anova/'
+IEeur=read_csv(path+'IEeur.tsv')
 IEeur=IEeur.astype(float)  
 
 out=DataFrame()
